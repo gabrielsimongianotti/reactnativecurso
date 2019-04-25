@@ -7,6 +7,7 @@ import axios from 'axios';
 
 
 type Props = {};
+
 export default class App extends Component<Props> {
   constructor(props) {
     super(props);
