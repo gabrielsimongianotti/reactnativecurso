@@ -9,9 +9,9 @@ export default class ListaItens extends Component {
   }
   //requisição HTTP
   componentWillMount(){
-    axios.get('http://faus.com.br/recursos/c/dmairr/api/itens.html')
-    .then(response => {this.setState({listaItens: response.data}); })
-    .catch(()=>{console.log('Erro ao recuperar os dados'); });
+    axios.get('https://www.canalti.com.br/api/pokemons.json')
+    .then(response => {(console.log(response.data) )})
+    .catch(()=>{console.log('Erro ao recuperar os dados') })
   }
 
   render() {

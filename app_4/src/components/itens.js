@@ -6,15 +6,7 @@ class Itens extends Component {
   render() {
     return (
         <View style={styles.item}>
-            <View styte={styles.foto}>
-                <Image style={{height:100,width:100}} source={{uri: this.props.item.foto}} />
-            </View>
-            <View style={styles.detalhesItem}>
-                <Text style={styles.txtTitulo}>{this.props.item.titulo}</Text>
-                <Text>R$ {this.props.item.valor}</Text>
-                <Text>Local: {this.props.item.local_anuncio}</Text>
-                <Text>Data: {this.props.item.data_publicacao}</Text>
-            </View>
+            
         </View>
     );
   }
