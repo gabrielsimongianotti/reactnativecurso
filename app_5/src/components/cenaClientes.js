@@ -1,0 +1,52 @@
+import React, {Component} from 'react';
+import { Text, Image, View,StatusBar,StyleSheet} from 'react-native';
+import BarraNavegacao from './barraNavegacao';
+
+const detalheCliente =require('../imgs/detalhe_cliente.png');
+const cliente1 =require('../imgs/cliente1.png');
+const cliente2 =require('../imgs/cliente2.png');
+;
+export default class CenaCliente extends Component {
+  render() {
+    return (
+        <View style={{ flex: 1, backgroundColor: '#FFF'}} >
+            <StatusBar
+            backgroundColor ='#B9C941'
+            />
+            {/* manda o navegator para o BarraNavegacao */}
+            <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#B9C941' />
+            
+            <View style= {styles.cabecalho}>
+                <Image source={detalheCliente}/>
+                <Text style={styles.txtTitulo}>Nossos Clientes</Text>
+            </View>
+            <View style={styles.detalheCliente}>
+                <Image source={cliente1}/>
+                <Text style={styles.txtDetalheCliente}>Lorem input</Text>
+            </View>
+            <View style={styles.detalheCliente}>
+                <Image source={cliente2}/>
+                <Text style={styles.txtDetalheCliente}>Loren input</Text>
+            </View>
+        </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+    cabecalho:{
+        flexDirection:'row',
+        marginTop:20
+    },txtTitulo:{
+        fontSize:30,
+        color:'#B9C941',
+        marginLeft: 10,
+        marginTop :25
+    },detalheCliente:{
+        padding: 20,
+        marginTop:10
+    },txtDetalheCliente:{
+        marginLeft: 20,
+        fontSize:18
+    }
+
+});
