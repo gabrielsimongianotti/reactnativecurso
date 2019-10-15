@@ -10,7 +10,7 @@ APP4: é um app que consome api
 
 APP5: App de uma empresa
 
-APP3: cara ou coroa
+APP6: cara ou coroa
 
 Todos os apps desse repositorio são desenvolvidos no curso da udemy: Desenvolvedor Multiplataforma Android/IOS com React e Redux
 
